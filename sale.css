@@ -1,0 +1,306 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+            /* root variable creation */
+:root{
+    --color: white;
+    --full:#f07e0b;
+    --bgbun:rgb(97, 97, 97);
+    --shadow: 4px 4px 8px 0  rgba(0, 0, 0, 0.2);
+}
+            /* Overall container */
+.main_container{
+    background-color: rgb(233, 233, 233);
+    width:100%;
+    padding:10px 5%;
+}
+.content{
+    background-color: var(--color);
+    padding:7px 10px;
+}
+.content h3{
+    font-weight: 400;
+    font-size: 29px;
+}
+    /* inside the two division card */
+.saleCard{
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 280px auto;
+    gap: 20px;
+}
+.word{
+    padding: 20px 0;
+}
+.collect{
+    background-color: var(--color);
+    padding: 15px;
+    box-shadow: var(--shadow);
+    width: 100%;
+}
+.collect li{
+    list-style: none;
+    width: fit-content;
+    font-size: 23px;
+    cursor: pointer;
+    line-height: 1.8;
+}
+.best{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.best h3{
+    padding-bottom: 13px;
+}
+.best .cart{
+    text-decoration:underline;
+}
+.from{
+    font-size: 17px;
+}
+.best del{
+    color: var(--bgbun);
+    font-size: 15px;
+}
+.best img{
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+.best img:hover{
+    background-color: silver;
+}
+.change{
+    color: var(--full);
+}
+.collect li:hover,.paint:hover{
+    color:var(--full);
+    cursor: pointer;
+}
+figure{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.button{
+    padding:5px 10px;
+    color: var(--color);
+    background-color: var(--bgbun);
+    font-size: 24px;
+    cursor: pointer;
+}
+.all{
+    background-color: var(--full);
+}
+.button:hover{
+    background-color: var(--full);
+}
+figcaption{
+    display: flex;
+}
+figcaption .sampleImg{
+    width: 250px;
+    height: 250px;
+}
+figcaption .cont{
+    padding-top: 20px;
+    font-size: 22px;
+}
+.saleMenu,.productlist{
+    display:flex ;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: var(--shadow);
+    background-color: var(--color);
+}
+.iconM{
+    display: flex;
+    gap: 9px;
+}
+.bar1,.showWord{
+    font-size: 24px;
+    padding: 4px;
+}
+.fl{
+    color: var(--full);
+    border:1px solid silver;
+}
+.optionList{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.showWord{
+    font-weight: bold;
+}
+.Opt{
+    font-size: 15px;
+    position: relative;
+    top: -2px;
+    padding: 3px;
+    border: 1px solid silver;
+}
+.buycard{
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.buycard>article{
+    display: flex;
+    gap: 20px;
+}
+.buycard header{
+    box-shadow: var(--shadow);
+    background-color: var(--color);
+    position: relative;
+    width: 380px;
+    height: 230px;
+    overflow: hidden;
+}
+.buycard>article>header>.buyImage{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.hideimage{
+    display: none;
+    z-index: 1;
+}
+.buycard>article>header:hover>.imageview{
+    display: none;
+}
+.buycard>article>header:hover>.hideimage{
+    display: block;
+}
+.buycard .left,.buycard .right{
+    position: absolute;
+    padding-top: 56px;
+    z-index: 2;
+    color:var(--color);
+    font-size: 18px;
+    font-weight: 700;
+    height: 85px;
+    text-align: center;
+    width: 200px;
+}
+.buycard .left{
+    background-color:#f00b3c;
+    vertical-align: top;
+    transform: rotate(-45deg) translate(-20%,-98%);
+    top: 0;
+}
+.buycard .right{
+    background-color: var(--full);
+    transform: rotate(45deg) translate(20%,-98%);
+    vertical-align: top;
+    right: 0;
+    top: 0;
+}
+.quick{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 100%;
+    display: none;
+    transition: all 2s;
+    z-index: 10;
+}
+.buycard>article>header:hover .quick{
+    display: block;
+}
+.hovView{
+    display: none;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    color: var(--full);
+    font-size: 23.9px;
+}
+.hovView:hover{
+    color: unset;
+}
+.buycard>article>header:hover .hovView{
+    display: block;
+    z-index: 5;
+}
+.buycard>article>aside{
+    padding: 5px;
+    line-height: 1.2;
+}
+.buycard>article>aside h2,.buycard p{
+    font-weight: 500;
+}
+
+.buycard>article>aside h2{
+    padding: 5px 0;
+}
+.buycard>article>aside p{
+    color: var(--bgbun);
+    font-size: 20px;
+}
+.buycard>article>aside h1{
+    font-size: 30px;
+}
+.buycard>article>aside h1>span{
+    color: var(--bgbun);
+    text-decoration: line-through;
+    font-weight: 500;
+}
+.buycard>article>aside>span{
+    text-decoration: underline;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+}
+.buycard>article>aside .choose,.un{
+    font-size: 30px;
+    padding-bottom: 6px;
+}
+.buycard>article>aside>.choose:hover{
+    color: var(--full);
+}
+.buycard>article>aside>.view{
+    font-size: 24px;
+    color: var(--full);
+}
+.buycard>article>aside>.view:hover{
+    color: unset;
+}
+.buycard>article .un{
+    color: var(--bgbun);
+}
+#layout1,#layout2{
+    display: none;
+}
+                /*--- menu bar click action layout style--- */
+#layout1:checked ~ .buycard{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 50px;
+}
+#layout1:checked ~ .buycard>article{
+    flex-direction: column;
+}
+#layout1:checked ~ .buycard>article header{
+    width: 300px;
+}
+#layout1:checked ~ .buycard>article aside p{
+    display: none;
+}
+#layout1:checked ~ .buycard>article aside h2{
+    padding: 20px 0;
+}
+                 /*--- menu bar click action layout style end---*/
+.productlist span{
+    font-size: 18px;
+    padding:3px 7px;
+}
