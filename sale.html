@@ -102,7 +102,7 @@
                             <aside class="saleMenu">
                                 <main class="iconM">
                                     <label for="layout1">
-                                        <i class="fa-solid fa-bars bar1" title="Grid Layout"></i>
+                                        <i class="fa-solid fa-bars bar1 gl" title="Grid Layout"></i>
                                     </label>
                                     <label for="layout2">
                                         <i class="fa-solid fa-bars-staggered bar1 fl" title="Flex Layout"></i>
@@ -136,9 +136,13 @@
                         </main>
                         <!-- radio button for below layout change -->
                         <input type="radio" name="layout1" id="layout1"/>
-                        <input type="radio" name="layout1" id="layout2"/>
+                        <input type="radio" name="layout2" id="layout2"/>
                         <!-- radio button layout change end -->
-                        <div class="buycard">
+                        <!-- below Previous,1,2 button div action  -->
+                        <input type="radio" name="button1" id="button1" checked/>
+                        <input type="radio" name="button2" id="button2"/>
+                        <!-- below 1,2,next button div action end -->
+                        <div class="buycard sixcard">
                                 <!-- Buy card product 1  -->
                             <article>
                                 <header>
@@ -257,17 +261,79 @@
                             </article>
                                 <!-- Buy card product 6 end  -->
                         </div>
+                        <div class="buycard twocard">
+                            <!-- Buy card product 7 next page  -->
+                            <article>
+                                <header>
+                                    <img src="./Sale Images/petown soft.webp" alt="Petown soft " class="imageview buyImage"/>
+                                    <img src="./Sale Images/petown soft2.webp" alt="Petown soft" class="hideimage buyImage"/>
+                                    <span class="left">New</span>
+                                    <span class="right">-51%</span>
+                                    <div class="quick">
+                                        <h2 class="hovView">quick view</h2>
+                                    </div>
+                                </header>
+                                <aside>
+                                    <h2 class="paint">Petown Soft sided Pet Carrier pet Carriers Airline Approved with Foldable and...</h2>
+                                    <p>We are all used to the fact that taking care of pets is our everyday responsibility. It is natural because often you can’t find such faithful frien...</p>
+                                    <h1>From $38.00 <span class="line">$72.00</span></h1>
+                                    <span class="choose" title="choose options">choose options</span><br>
+                                    <span class="view">view</span>
+                                </aside>
+                            </article>
+                            <!-- Buy card product 7 next page end  -->
+                            <!-- Buy card product 8 next page  -->
+                            <article>
+                                <header>
+                                    <img src="./Sale Images/Petfusion.webp" alt="Pet fusion " class="imageview buyImage"/>
+                                    <img src="./Sale Images/Petfusion2.webp" alt="Pet fusion " class="hideimage buyImage"/>
+                                    <span class="left">New</span>
+                                    <div class="quick">
+                                        <h2 class="hovView">quick view</h2>
+                                    </div>
+                                </header>
+                                <aside>
+                                    <h2 class="paint">PetFusion Pet Food Mat in Premium FDA Grade Silicone (Large, Grey)</h2>
+                                    <p>We are all used to the fact that taking care of pets is our everyday responsibility. It is natural because often you can’t find such faithful frien...</p>
+                                    <h1>$34.00</h1>
+                                    <span class="choose" title="add to cart">add to cart</span><br>
+                                    <span class="view">view</span>
+                                </aside>
+                            </article>
+                        </div>
+                                <!-- Buy card product 8 nezt page end -->
                                 <!---- option of select product ---->
                         <div class="productlist">
-                            <div class="list">
+                            <div class="list listpast">
                                 <h3>1-6 products of 8</h3>
                             </div>
-                            <div class="list">
-                                <span class="button all">1</span>
-                                <span class="button">2</span>
-                                <span class="button">Next>></span>
+                            <div class="list listpast">
+                                <figure>
+                                    <span class="button all" >
+                                       <label for="button1">1</label>
+                                    </span>
+                                    <span class="button">
+                                        <label for="button2">2</label></span>
+                                    <span class="button">
+                                        <label for="button2">Next&gt;&gt;</label></span>
+                                </figure>
+                            </div>
+                            <div class="list listhide">
+                                <h3>7-8 products of 8</h3>
+                            </div>
+                            <div class="list listhide">
+                                <figure>
+                                    <span class="button" >
+                                       <label for="button1"> &lt;&lt;Previous</label>
+                                    </span>
+                                    <span class="button">
+                                        <label for="button1">1</label></span>
+                                    <span class="button all">
+                                        <label for="button2">2</label></span>
+                                </figure>
                             </div>
                         </div>
+                    </div>
                         <!------- option select end ----->
                     </div>
                 </div>

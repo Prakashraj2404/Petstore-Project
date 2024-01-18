@@ -293,6 +293,17 @@ figcaption .cont{
 #layout1:checked ~ .buycard>article header{
     width: 300px;
 }
+.gl{
+    border: 1px solid transparent;
+}
+.bar1:active{
+    color: var(--full);
+    border:1px solid var(--bgbun);
+}
+.bar1:focus{
+    color: var(--full);
+    border: 1px solid var(--bgbun);
+}
 #layout1:checked ~ .buycard>article aside p{
     display: none;
 }
@@ -303,4 +314,22 @@ figcaption .cont{
 .productlist span{
     font-size: 18px;
     padding:3px 7px;
+}
+.productlist .listhide{
+    display: none;
+}
+.twocard{
+    display: none;
+}
+#button2:checked ~ .twocard{
+    display: block;
+}
+#button2:checked ~ .sixcard {
+    display: none;
+}
+#button2:checked ~ .productlist .listhide{
+    display: block;
+}
+#button2:checked ~ .productlist .listpast{
+    display: none;
 }
