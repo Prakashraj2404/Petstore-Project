@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: 18px Merriweather Sans,sans-serif;
+    }
+            /* root variable creation */
+:root{
+    --color: white;
+    --full:#f07e0b;
+    --bgbun:rgb(97, 97, 97);
+    --shadow: 4px 4px 8px 0  rgba(0, 0, 0, 0.2);
+}
+.overall-container{
+    background: var(--bgbun);
+    /* min-height: 500px; */
+    padding: 30px 50px;
+}
+.page_info_content {
+    margin: 20px 0;
+}
+.page_info_content h3{
+    height: 50px;
+    padding: 10px;
+    background-color: var(--color);
+    font-size: 1.3rem;
+
+}
+.serach_blog{
+    width: 400px;
+    /* border: 1px solid white; */
+    /* padding: 10px 0 ; */
+}
+.serach_blog input{
+    height: 35px;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: unset;
+}
+.serach_blog>input~i{
+    height: 35px;
+    width: 40px;
+    background: var(--full);
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -35px;
+    left: 90%;
+}
+.serach_blog h1{
+    font-size: 1.5rem;
+    padding: 0 0 30px;
+}
+.recent-articles{
+    width: 100%;
+    min-height: 180px;
+    padding: 20px 0;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recent-articles img{
+    height: 180px;
+    width: 180px;
+
+}
+.recent-articles-content{
+    height: 180px;
+    width: 220px;
+    padding: 0 10px;
+}
+.recent-articles-content h2{
+    font-size: 1.1.5rem;
+    padding: 0 0 20px;
+}
+.recent-articles-content p{
+    font-size: 1.06rem;
+    line-height: 1.5rem;
+    padding: 0 0px 20px;
+}
