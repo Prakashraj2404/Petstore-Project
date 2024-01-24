@@ -12,7 +12,7 @@
     --shadow: 4px 4px 8px 0  rgba(0, 0, 0, 0.2);
 }
 .overall-container{
-    background: var(--bgbun);
+    background-color: rgb(233, 233, 233);
     /* min-height: 500px; */
     padding: 30px 50px;
 }
@@ -26,10 +26,15 @@
     font-size: 1.3rem;
 
 }
+.blog_container{
+    display: flex;
+    /* justify-content: center; */
+    align-self: center;
+}
 .serach_blog{
     width: 400px;
-    /* border: 1px solid white; */
-    /* padding: 10px 0 ; */
+    /* border: 1px solid black; */
+    
 }
 .serach_blog input{
     height: 35px;
@@ -53,15 +58,17 @@
 .serach_blog h1{
     font-size: 1.5rem;
     padding: 0 0 30px;
+    font-weight: bold;
+
 }
 .recent-articles{
     width: 100%;
     min-height: 180px;
     padding: 20px 0;
-    /* border: 1px solid white; */
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid #d9d9d9;;
 }
 .recent-articles img{
     height: 180px;
@@ -81,4 +88,77 @@
     font-size: 1.06rem;
     line-height: 1.5rem;
     padding: 0 0px 20px;
+}
+.recent-tags{
+    width: 100%;
+    min-height: 180px;
+    padding: 20px 0;
+}
+.recent-tags h1{
+    padding: 0 0 20px;
+    font-weight: bold;
+
+}
+.recent-tags a{
+    height: 40px;
+    background: rgba(0,0,0,.05);
+    font-size: 18px;
+    padding:  10px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 10px 5px 0;
+    color: #323131;
+}
+.recent-tags a>i{
+    color: #f07e0b;
+}
+.recent-tags h2{
+    padding: 20px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.blog_content{
+    width: 800px;
+    padding: 0 20px ;
+    border: 1px solid black;
+    min-height: 500px;
+
+}
+.blog_content h1{
+    font-size: 1.5rem;
+    padding: 0 0 40px;
+    font-weight: bold;
+}
+.blog_content h2{
+    font-size: 1.09rem;
+    padding: 0 0 30px;
+}
+.blog_content h3{
+    display: inline-block;
+    padding: 0 20px 20px 0px;
+    border-right: 1px solid #d9d9d9;;
+    color: #a9a9a9;
+
+}
+.blog_content h3:nth-child(4), .blog_content h3:nth-child(5){
+    padding-left: 10px;
+}
+.blod_content_write {
+    display: flex;
+    gap: 20px;
+
+}
+.blod_content_write img{
+    height: 250px;
+    width: 220px;
+    display: inline;
+}
+.content_writer p{
+    line-height: 1.4rem;
+    padding-bottom: 15px;
+    display: inline;
+}
+.content_writer span{
+    font-size: 1.08rem;
+    font-weight: bold;
 }
