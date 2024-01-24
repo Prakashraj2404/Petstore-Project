@@ -69,6 +69,34 @@
     /* object-fit: cover; */
 }
 
+/*----------------------9 logo--------------------------*/
+.logo{
+    width:78%;
+    height:200px;
+    background-color:var(--silver);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9
+{
+    width:130px;
+    height: 100px;
+}
+.box1 img,.box2 img,.box3 img,.box4 img,.box5 img,.box6 img,.box7 img,.box8 img,.box9 img
+{
+    width:100%;
+    height:100%;
+}
+
+.box img:hover{
+    cursor: pointer;
+    filter: opacity(30%);
+}
+
+
 
 /*----------------------Dog supplies--------------------------*/
 .dog {
@@ -123,7 +151,8 @@
 .leftside {
     width: 45%;
     height: 550px;
-    padding: 80px 135px 80px 135px;
+    padding: 80px 70px 80px 185px;
+
 }
 
 .leftside h1 {
@@ -139,11 +168,12 @@
 
 .rightside {
     width: 55%;
-    height: 550px;
+    height:550px;
 }
 
 .rightside img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    padding:0px 150px 0px 0px;
 }
