@@ -11,6 +11,7 @@
     --white: #FFFFFF;
     --silver: #EEEEEE;
     --black: #323232;
+    --lightsilver: #A9A9A9;
 }
 
 /* --------------------Helping your pets get rid------------------- */
@@ -105,4 +106,44 @@
 
 .dog button:hover {
     background-color: var(--orange);
+}
+
+
+/* --------------Free shipping on order over------------------ */
+
+.cat {
+    width: 100%;
+    height: 550px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftside {
+    width: 45%;
+    height: 550px;
+    padding: 80px 135px 80px 135px;
+}
+
+.leftside h1 {
+    font-size: 95px;
+    font-family: 'Just Another Hand', cursive;
+    color: var(--black);
+    line-height: 95px;
+}
+
+.leftside span {
+    color: var(--lightsilver);
+}
+
+.rightside {
+    width: 55%;
+    height: 550px;
+}
+
+.rightside img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
