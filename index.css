@@ -12,7 +12,7 @@
     --silver: #EEEEEE;
     --black: #323232;
     --lightsilver: #A9A9A9;
-
+    --gray: #615d5d;
 }
 
 /* --------------------Helping your pets get rid------------------- */
@@ -444,4 +444,169 @@
     height: 100%;
     object-fit: cover;
     padding: 0px 150px 0px 0px;
+}
+
+/*--------------------Footer Area-------------------------*/
+.footeroverall {
+    width: 100%;
+    height: 600px;
+    background-color: var(--silver);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ftcontent {
+    width: 78%;
+    height: 500px;
+    border: 3px solid var(--lightsilver);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+/*-------information-------*/
+
+.info,
+.cata,
+.acc,
+.face {
+    width: 20%;
+    height: 500px;
+
+}
+
+.info h3,
+.cata h3,
+.acc h3,
+.cont h3,
+.face h3 {
+    font-size: 30px;
+    padding: 40px 0px;
+
+}
+
+.info a:nth-child(2),
+.info a:nth-child(3),
+.info a:nth-child(4),
+.info a:nth-child(5),
+.info a:nth-child(6) {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 33px;
+    color: var(--orange);
+}
+
+.info a:nth-child(2):hover,
+.info a:nth-child(3):hover,
+.info a:nth-child(4):hover,
+.info a:nth-child(5):hover,
+.info a:nth-child(6):hover {
+    color: var(--gray);
+}
+
+/*-------Catalog-------*/
+.cata a:nth-child(2),
+.cata a:nth-child(3),
+.cata a:nth-child(4),
+.cata a:nth-child(5),
+.cata a:nth-child(6),
+.cata a:nth-child(7),
+.cata a:nth-child(8),
+.cata a:nth-child(9),
+.cata a:nth-child(10),
+.cata a:nth-child(11) {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 33px;
+    color: var(--orange);
+}
+
+.cata a:nth-child(2):hover,
+.cata a:nth-child(3):hover,
+.cata a:nth-child(4):hover,
+.cata a:nth-child(5):hover,
+.cata a:nth-child(6):hover,
+.cata a:nth-child(7):hover,
+.cata a:nth-child(8):hover,
+.cata a:nth-child(9):hover,
+.cata a:nth-child(10):hover,
+.cata a:nth-child(11):hover {
+    color: var(--gray);
+}
+
+/*--------My account---------*/
+.acc a:nth-child(2),
+.acc a:nth-child(3),
+.acc a:nth-child(4) {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 33px;
+    color: var(--orange);
+}
+
+.acc a:nth-child(2):hover,
+.acc a:nth-child(3):hover,
+.acc a:nth-child(4):hover {
+    color: var(--gray);
+}
+
+/*-------Contacts-------*/
+.cont {
+    width: 30%;
+    height: 500px;
+
+}
+
+.cont h4 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.cont h5 {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 8px;
+}
+
+.cont h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cont h1:hover {
+    color: var(--orange);
+    cursor: pointer;
+}
+
+/*-------Footer last area-------*/
+.right {
+    width: 100%;
+    height: 100px;
+    background-color: var(--silver);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right h4 {
+    font-size: 18px;
+    color: var(--gray);
+
+}
+
+.fa-angle-up {
+    background-color: var(--orange);
+    padding: 8px 10px;
+    color: var(--white);
+    font-size: 20px;
+}
+
+.fa-angle-up:hover {
+    background-color: var(--black);
 }
