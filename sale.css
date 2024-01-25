@@ -315,6 +315,9 @@ figcaption .cont{
     font-size: 18px;
     padding:3px 7px;
 }
+.productlist .labelI>span:last-child{
+   margin-left:4px ;
+}
 .productlist .listhide{
     display: none;
 }
