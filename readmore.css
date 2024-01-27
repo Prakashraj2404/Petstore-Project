@@ -60,6 +60,10 @@
     top: -35px;
     left: 90%;
 }
+.serach_blog>input~i:hover{
+    background-color: black;
+    cursor: pointer;
+}
 .serach_blog h1{
     font-size: 1.5rem;
     padding: 0 0 30px;
@@ -90,11 +94,16 @@
 .recent-articles-content h2{
     font-size: 1.1.5rem;
     padding: 0 0 20px;
+    color: #a9a9a9;
 }
 .recent-articles-content p{
     font-size: 1.06rem;
     line-height: 1.5rem;
     padding: 0 0px 20px;
+}
+.recent-articles-content p:hover{
+    color: #f07e0b;
+    cursor: pointer;
 }
 .recent-tags{
     width: 100%;
@@ -115,6 +124,14 @@
     display: inline-block;
     margin: 10px 10px 5px 0;
     color: #323131;
+}
+.recent-tags a:hover{
+    background-color: #f07e0b;
+    color: #fff;
+    cursor: pointer;
+}
+.recent-tags a:hover>i{
+    color: white;
 }
 .recent-tags a>i{
     color: #f07e0b;
@@ -208,6 +225,9 @@
     outline: none;
     border: unset;
     font-size: 1.2rem;
+}
+.first_need input:focus,.blog_second textarea:focus{
+    box-shadow: var(--shadow);
 }
 .blog_second textarea{
     width: 100%;
