@@ -18,6 +18,7 @@ p,span{
     --content-font:'Merriweather Sans', sans-serif;
     --primary-color:rgb(240,126,11);
     --secondry-color:rgb(155,155,155);
+    --third-color:rgb(238, 238, 238);
     --dark-color:rgb(50,48,49);
     --light-color:rgb(255, 255, 255);
 }
@@ -109,8 +110,52 @@ html{
     right:20px;
     
 }
-
-
+/* top bar 2 styling */
+.topbar-2{
+    background-color:var(--third-color);
+    display:flex;
+    padding:2rem 1rem;
+    justify-content:space-between;
+}
+.right-content{
+    /* background-color:red; */
+    width:50%;
+    display:inline-flex;
+    align-items:center;
+    gap:1rem;
+}
+.right-content h1{
+    color:var(--light-color);
+    background-color:var(--dark-color);
+    font-size:3rem;
+    padding:5px;
+}
+.right-content p{
+    color:var(--secondry-color);
+    
+}
+.left-content{
+    /* background-color:yellow; */
+    width:50%;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:0 3rem;
+}
+.left-content p{
+    font-size:1.5rem;
+    color:var(--primary-color);
+}
+.left-content p .fnum{
+    color:var(--secondry-color);
+}
+.left-content i{
+    padding-right:0.5rem;
+    font-size:3rem;
+}
+.left-content .cart-text span{
+    font-size:1rem; 
+}
 /* responsive code and media query part */
 @media only screen and (max-width:991px){
     html{
@@ -188,4 +233,37 @@ html{
    html{
     font-size:10px;
    }
+}
+
+/* media query for topbar 2 */
+@media only screen and (max-width:768px){
+    .right-content{
+        width:40%;
+    }
+    .left-content{
+        width:60%;
+    }
+}
+@media only screen and (max-width:720px){
+    .topbar-2{
+        flex-direction:column;
+    }
+    .right-content{
+        display: flex;
+        width:100%;
+        justify-content: center;
+        gap:2rem;
+
+    }
+    .left-content{
+        width:100%;
+    }
+}
+@media only screen and (max-width:460px){
+   
+    .left-content{
+        flex-direction:column-reverse;
+        padding:1rem 0;
+        gap:2rem;
+    }
 }
