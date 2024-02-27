@@ -11,9 +11,9 @@
     --white: #FFFFFF;
     --silver: #EEEEEE;
     --black: #323232;
+    --lightsilver: #A9A9A9;
+    --gray: #615d5d;
 }
-
-
 
 /* --------------------Helping your pets get rid------------------- */
 .container {
@@ -70,4 +70,543 @@
     /* object-fit: cover; */
 }
 
+/*----------------------4 layout gallery--------------------------*/
+.gallery {
+    width: 78%;
+    height: 130vh;
+    background-color: var(--silver);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.first,
+.third {
+    width: 30%;
+    height: 110vh;
+    /* border:1px solid black; */
+    background-image: url(./images/custom_showcase1_img.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.first:hover,
+.third:hover,
+.one:hover,
+.two:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.second {
+    width: 30%;
+    height: 110vh;
+    /* border:1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--silver);
+}
+
+.one {
+    width: 100%;
+    height: 50vh;
+    background-color: gray;
+    background-image: url(./images/custom_showcase2_img.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.one p {
+    font-size: 60px;
+    font-family: 'Just Another Hand', cursive;
+    padding: 160px 30px 5px;
+    line-height: 60px;
+
+}
+
+.one button {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 8px 20px;
+    font-size: 20px;
+    border: none;
+}
+
+.one button:hover {
+    background-color: var(--orange);
+}
+
+
+.two {
+    width: 100%;
+    height: 50vh;
+    background-color: #F07E0B;
+    background-image: url(./images/custom_showcase3_img.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    cursor: pointer;
+}
+
+.two p {
+    font-size: 60px;
+    font-family: 'Just Another Hand', cursive;
+    padding: 25px 30px 5px;
+    line-height: 60px;
+
+}
+
+.two button {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 8px 20px;
+    font-size: 20px;
+    border: none;
+}
+
+.two button:hover {
+    background-color: var(--orange);
+}
+
+
+.third {
+    background-image: url(./images/custom_showcase4_img.webp);
+}
+
+.first h1,
+.third h1 {
+    font-family: 'Just Another Hand', cursive;
+    font-size: 90px;
+    padding: 50px 70px 20px;
+    line-height: 75px;
+}
+
+
+.first span,
+.third span {
+    font-size: 80px;
+    padding: 10px 0px;
+}
+
+.first button,
+.third button {
+    font-size: 20px;
+    padding: 8px 15px;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+}
+
+.first button:hover,
+.third button:hover {
+    background-color: var(--orange);
+}
+
+
+
+
+/*----------------------9 logo--------------------------*/
+.logo {
+    width: 78%;
+    height: 200px;
+    background-color: var(--silver);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9 {
+    width: 130px;
+    height: 100px;
+}
+
+.box1 img,
+.box2 img,
+.box3 img,
+.box4 img,
+.box5 img,
+.box6 img,
+.box7 img,
+.box8 img,
+.box9 img {
+    width: 100%;
+    height: 100%;
+}
+
+.box img:hover {
+    cursor: pointer;
+    filter: opacity(30%);
+}
+
+
+
 /*----------------------Dog supplies--------------------------*/
+.dog {
+    width: 78%;
+    height: 600px;
+    background-image: url(./images/homepage_bg_video_block_img.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.dog h1 {
+    color: var(--white);
+    font-family: 'Just Another Hand', cursive;
+    font-size: 100px;
+    padding: 100px 100px 30px;
+    line-height: 110px;
+}
+
+.dog p {
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 20px 100px;
+    line-height: 30px;
+}
+
+.dog button {
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+}
+
+.dog button:hover {
+    background-color: var(--orange);
+}
+
+/* --------------Featured products------------------ */
+
+.arrow {
+    width: 78%;
+    height: 100px;
+    background-color: var(--silver);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow h3 {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--black);
+
+}
+
+.fa-angle-left,
+.fa-angle-right {
+    font-size: 40px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.fa-angle-left:hover,
+.fa-angle-right:hover {
+    color: var(--orange);
+}
+
+/*---------------------Eight card product---------------------------*/
+.eightcard {
+    width: 78%;
+    background-color: var(--silver);
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.cardone,
+.cardtwo,
+.cardthree,
+.cardfour,
+.cardfive,
+.cardsix,
+.cardseven,
+.cardeight {
+    /* width: 23%; */
+    height: 550px;
+    /* border: 1px solid black; */
+    font-family: arial;
+}
+
+.imglogo {
+    width: 100%;
+    height: 250px;
+    background-color: var(--white);
+    object-fit: cover;
+}
+
+.imglogo p {
+    font-size: 20px;
+    padding: 20px 0px;
+    line-height: 30px;
+
+
+}
+
+.imglogo p:hover {
+    color: var(--orange);
+    cursor: pointer;
+
+}
+
+.imglogo h3 {
+    font-size: 27px;
+}
+
+.imglogo del {
+    color: var(--lightsilver);
+}
+
+.imglogo>a>h2 {
+    padding: 20px 0px;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.imglogo h2:hover {
+    color: var(--orange);
+}
+
+.imglogo h4 {
+    color: var(--orange);
+}
+
+.imglogo h4:hover {
+    color: var(--black);
+}
+
+
+/* --------------Free shipping on order over------------------ */
+
+.cat {
+    width: 100%;
+    height: 550px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftside {
+    width: 45%;
+    height: 550px;
+    padding: 80px 70px 80px 185px;
+
+}
+
+.leftside h1 {
+    font-size: 95px;
+    font-family: 'Just Another Hand', cursive;
+    color: var(--black);
+    line-height: 95px;
+}
+
+.leftside span {
+    color: var(--lightsilver);
+}
+
+.rightside {
+    width: 55%;
+    height: 550px;
+}
+
+.rightside img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0px 150px 0px 0px;
+}
+
+/*--------------------Footer Area-------------------------*/
+.footeroverall {
+    width: 100%;
+    height: 600px;
+    background-color: var(--silver);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ftcontent {
+    width: 78%;
+    height: 500px;
+    border: 3px solid var(--lightsilver);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+/*-------information-------*/
+
+.info,
+.cata,
+.acc,
+.face {
+    width: 20%;
+    height: 500px;
+
+}
+
+.info h3,
+.cata h3,
+.acc h3,
+.cont h3,
+.face h3 {
+    font-size: 30px;
+    padding: 40px 0px;
+
+}
+
+.info a:nth-child(2),
+.info a:nth-child(3),
+.info a:nth-child(4),
+.info a:nth-child(5),
+.info a:nth-child(6) {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 33px;
+    color: var(--orange);
+}
+
+.info a:nth-child(2):hover,
+.info a:nth-child(3):hover,
+.info a:nth-child(4):hover,
+.info a:nth-child(5):hover,
+.info a:nth-child(6):hover {
+    color: var(--gray);
+}
+
+/*-------Catalog-------*/
+.cata a:nth-child(2),
+.cata a:nth-child(3),
+.cata a:nth-child(4),
+.cata a:nth-child(5),
+.cata a:nth-child(6),
+.cata a:nth-child(7),
+.cata a:nth-child(8),
+.cata a:nth-child(9),
+.cata a:nth-child(10),
+.cata a:nth-child(11) {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 33px;
+    color: var(--orange);
+}
+
+.cata a:nth-child(2):hover,
+.cata a:nth-child(3):hover,
+.cata a:nth-child(4):hover,
+.cata a:nth-child(5):hover,
+.cata a:nth-child(6):hover,
+.cata a:nth-child(7):hover,
+.cata a:nth-child(8):hover,
+.cata a:nth-child(9):hover,
+.cata a:nth-child(10):hover,
+.cata a:nth-child(11):hover {
+    color: var(--gray);
+}
+
+/*--------My account---------*/
+.acc a:nth-child(2),
+.acc a:nth-child(3),
+.acc a:nth-child(4) {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 33px;
+    color: var(--orange);
+}
+
+.acc a:nth-child(2):hover,
+.acc a:nth-child(3):hover,
+.acc a:nth-child(4):hover {
+    color: var(--gray);
+}
+
+/*-------Contacts-------*/
+.cont {
+    width: 30%;
+    height: 500px;
+
+}
+
+.cont h4 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.cont h5 {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 8px;
+}
+
+.cont h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cont h1:hover {
+    color: var(--orange);
+    cursor: pointer;
+}
+
+/*-------Footer last area-------*/
+.right {
+    width: 100%;
+    height: 100px;
+    background-color: var(--silver);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right h4 {
+    font-size: 18px;
+    color: var(--gray);
+
+}
+
+.fa-angle-up {
+    background-color: var(--orange);
+    padding: 8px 10px;
+    color: var(--white);
+    font-size: 20px;
+}
+
+.fa-angle-up:hover {
+    background-color: var(--black);
+}

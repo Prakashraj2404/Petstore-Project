@@ -78,6 +78,9 @@
 .change{
     color: var(--full);
 }
+li{
+    color: rgb(97, 97, 97);
+}
 .collect li:hover,.paint:hover{
     color:var(--full);
     cursor: pointer;
@@ -102,10 +105,12 @@ figure{
 }
 figcaption{
     display: flex;
+    padding:10px;
 }
 figcaption .sampleImg{
     width: 250px;
     height: 250px;
+    padding: 10px;
 }
 figcaption .cont{
     padding-top: 20px;
@@ -142,6 +147,7 @@ figcaption .cont{
     font-size: 15px;
     position: relative;
     top: -2px;
+    cursor: pointer;
     padding: 3px;
     border: 1px solid silver;
 }
@@ -153,7 +159,7 @@ figcaption .cont{
 }
 .buycard>article{
     display: flex;
-    gap: 20px;
+    gap: 23px;
 }
 .buycard header{
     box-shadow: var(--shadow);
@@ -162,6 +168,9 @@ figcaption .cont{
     width: 380px;
     height: 230px;
     overflow: hidden;
+}
+.twocard article{
+    margin-bottom:30px ;
 }
 .buycard>article>header>.buyImage{
     height: 100%;
@@ -278,19 +287,19 @@ figcaption .cont{
 .buycard>article .un{
     color: var(--bgbun);
 }
-#layout1,#layout2{
+#layout1{
     display: none;
 }
                 /*--- menu bar click action layout style--- */
-#layout1:checked ~ .buycard{
+.layout:checked ~ .buycard{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap: 50px;
 }
-#layout1:checked ~ .buycard>article{
+.layout:checked ~ .buycard>article{
     flex-direction: column;
 }
-#layout1:checked ~ .buycard>article header{
+.layout:checked ~ .buycard>article header{
     width: 300px;
 }
 .gl{
@@ -304,10 +313,10 @@ figcaption .cont{
     color: var(--full);
     border: 1px solid var(--bgbun);
 }
-#layout1:checked ~ .buycard>article aside p{
+.layout:checked ~ .buycard>article aside p{
     display: none;
 }
-#layout1:checked ~ .buycard>article aside h2{
+.layout:checked ~ .buycard>article aside h2{
     padding: 20px 0;
 }
                  /*--- menu bar click action layout style end---*/
@@ -315,21 +324,24 @@ figcaption .cont{
     font-size: 18px;
     padding:3px 7px;
 }
+.productlist .labelI>span:last-child{
+   margin-left:4px ;
+}
 .productlist .listhide{
     display: none;
 }
 .twocard{
     display: none;
 }
-#button2:checked ~ .twocard{
+.button2:checked ~ .twocard{
     display: block;
 }
-#button2:checked ~ .sixcard {
+.button2:checked ~ .sixcard {
     display: none;
 }
-#button2:checked ~ .productlist .listhide{
+.button2:checked ~ .productlist .listhide{
     display: block;
 }
-#button2:checked ~ .productlist .listpast{
+.button2:checked ~ .productlist .listpast{
     display: none;
 }
