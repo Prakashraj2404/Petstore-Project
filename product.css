@@ -1,0 +1,191 @@
+/* heading fonts */
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+/* content fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:var(--heding-font);
+}
+p,span{
+    font-family:var(--content-font);
+}
+:root{
+    --heding-font:'Just Another Hand', cursive;
+    --content-font:'Merriweather Sans', sans-serif;
+    --primary-color:rgb(240,126,11);
+    --secondry-color:rgb(155,155,155);
+    --dark-color:rgb(50,48,49);
+    --light-color:rgb(255, 255, 255);
+}
+body{
+    background-color:var(--primary-color);
+}
+html{
+    font-size:16px;
+}
+/* this is the content above navigation  bar */
+.topbar-1{
+    background-color:var(--light-color);
+    padding:1rem 4rem;
+    display:flex;
+    justify-content:space-between;
+}
+.top-nav-left{
+    width:50%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-weight:bold;
+}
+
+.group-span span{
+    display:inline-block;
+    color:var(--primary-color);
+    padding:5px 10px;
+    border-right:2px solid var(--dark-color);
+}
+.group-span .checkout{
+    border-right:unset;
+}
+.group-span span:hover{
+    cursor:pointer;
+    color:var(--secondry-color);
+}
+/* style for dropdown menu ,it holding dropdown menu */
+.select-container{
+    width:15%;
+}
+.select-container #payment-methods{
+    width:100%;
+    color:var(--primary-color);
+    /* padding:0 0 0 20px ; */
+    outline:none;
+    font-weight:bold;
+    border:none;
+    display:flex;
+    justify-content:center;
+    text-align:center;
+}
+#payment-methods option{
+    background-color:var(--light-color);
+    font-weight:bold;
+    /* background-color:red; */
+    
+}
+#payment-methods option:hover{
+    color:var(--secondry-color);
+}
+/* style for search bar in top bar */
+.search-right{
+    /* background-color:yellow; */
+    width:40%;
+    display:inline-flex;
+    justify-content:flex-start;
+}
+.search-holder{
+    width:60%;
+    /* background-color:red; */
+    position:relative;
+}
+.search-holder input[type="search"]{
+    width:100%;
+    padding:0.5rem 0;
+    outline:none;
+    border:none;
+    border-bottom:3px solid var(--dark-color);
+    padding-right:40px;
+}
+.search-holder input[type="search"]::placeholder{
+    font-weight:bold;
+}
+.search-holder i{
+    position:absolute;
+    font-size:1.5em;
+    top:0;
+    right:20px;
+    
+}
+
+
+/* responsive code and media query part */
+@media only screen and (max-width:991px){
+    html{
+        font-size:14px;
+    }
+    .topbar-1{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:20px;
+    }
+    .top-nav-left{
+        width:50%;
+        flex-direction:row-reverse;
+    }
+    .search-right{
+        width:60%;
+    }
+    .search-holder{
+        width:100%;
+    }
+}
+@media only screen and (max-width:775px){
+    .top-nav-left{
+        width:60%;
+    }
+    .search-right{
+        width:70%;
+    }
+}
+@media only screen and (max-width:665px){
+    .top-nav-left{
+        width:70%;
+    }
+    .search-right{
+        width:80%;
+    }
+}
+@media only screen and (max-width:586px){
+    .top-nav-left{
+        width:80%;
+    }
+    .search-right{
+        width:90%;
+    }
+}
+@media only screen and (max-width:526px){
+    .top-nav-left{
+        width:90%;
+    }
+    .search-right{
+        width:100%;
+    }
+}
+@media only screen and (max-width:480px){
+    .top-nav-left{
+        flex-direction:column;
+        width:100%;
+        gap:20px;
+    }
+    .select-container{
+        width:40%;
+    }
+   
+}
+@media only screen and (max-width:394px){
+    html{
+        font-size:12px;
+       }
+    .top-nav-left .group-span span{
+        padding:2px;
+    }
+}
+@media only screen and (max-width:320px){
+   html{
+    font-size:10px;
+   }
+}
