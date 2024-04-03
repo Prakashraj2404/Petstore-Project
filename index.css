@@ -21,6 +21,7 @@
     display: grid;
     place-items: center;
     background-color: var(--silver);
+
 }
 
 .helping {
@@ -65,25 +66,133 @@
 
 .helping img {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     padding: 50px 0px;
     /* object-fit: cover; */
 }
 
+
+@media only screen and (max-width:830px) {
+    .container {
+        width: 100%;
+        min-height: auto;
+        display: grid;
+        place-items: center;
+        background-color: var(--silver);
+        /* background-color: skyblue; */
+        padding: 15px;
+    }
+
+    .helping {
+        width: 95%;
+        background-color: var(--white);
+        /* background-color: skyblue; */
+        display: grid;
+        place-items: center;
+
+    }
+
+    .helping h1 {
+        color: var(--orange);
+        font-size: 50px;
+        font-family: 'Just Another Hand', cursive;
+        padding: 30px 35px;
+        text-align: center;
+
+    }
+
+    .helping img {
+        width: 100%;
+        min-height: 100%;
+        /* padding:30px; */
+        /* object-fit: cover; */
+    }
+
+    .helping button {
+        color: var(--white);
+        background-color: var(--black);
+        padding: 10px 15px;
+        font-size: 15px;
+        border: none;
+    }
+}
+
+@media only screen and (min-width:830px) and (max-width:1200px) {
+    .container {
+        /* width: 100%; */
+        min-height: auto;
+        display: grid;
+        place-items: center;
+        background-color: var(--silver);
+        /* background-color: skyblue; */
+        padding: 40px;
+
+    }
+
+    .helping {
+        width: 90%;
+        background-color: var(--white);
+        /* background-color: skyblue; */
+        display: grid;
+        place-items: center;
+
+
+    }
+
+    .helping h1 {
+        color: var(--orange);
+        font-size: 90px;
+        font-family: 'Just Another Hand', cursive;
+        padding: 60px 90px;
+        text-align: center;
+
+    }
+
+    .helping img {
+        width: 100%;
+        height: 100%;
+        /* padding:30px; */
+        /* object-fit: cover; */
+    }
+
+    .helping button {
+        color: var(--white);
+        background-color: var(--black);
+        padding: 10px 15px;
+        font-size: 25px;
+        border: none;
+    }
+}
+
 /*----------------------4 layout gallery--------------------------*/
+
+.gallery-overall {
+    width: 100%;
+    /* background-color: skyblue; */
+    display: grid;
+    place-items: center;
+
+}
+
+
 .gallery {
     width: 78%;
-    height: 130vh;
+    min-height: 650px;
     background-color: var(--silver);
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 60px;
+    padding: 60px;
+
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
 
 }
 
 .first,
 .third {
-    width: 30%;
+
     height: 110vh;
     /* border:1px solid black; */
     background-image: url(./images/custom_showcase1_img.webp);
@@ -103,19 +212,24 @@
 }
 
 .second {
-    width: 30%;
-    height: 110vh;
+    width: 100%;
+    min-height: 650px;
     /* border:1px solid black; */
-    display: flex;
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    gap: 60px;
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
+    gap:70px; */
     background-color: var(--silver);
 }
 
 .one {
-    width: 100%;
-    height: 50vh;
+
+    min-height: 350px;
     background-color: gray;
     background-image: url(./images/custom_showcase2_img.webp);
     background-repeat: no-repeat;
@@ -128,7 +242,7 @@
 .one p {
     font-size: 60px;
     font-family: 'Just Another Hand', cursive;
-    padding: 160px 30px 5px;
+    padding: 30px;
     line-height: 60px;
 
 }
@@ -147,8 +261,8 @@
 
 
 .two {
-    width: 100%;
-    height: 50vh;
+
+    min-height: 350px;
     background-color: #F07E0B;
     background-image: url(./images/custom_showcase3_img.webp);
     background-repeat: no-repeat;
@@ -215,14 +329,139 @@
 
 
 
+@media only screen and (max-width:500px) {
+    .gallery-overall {
+        width: 100%;
+        /* background-color: skyblue; */
+        display: grid;
+        place-items: center;
+
+
+    }
+
+
+    .gallery {
+        width: 100%;
+        min-height: 650px;
+        background-color: var(--silver);
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .first h1,
+    .third h1 {
+        font-family: 'Just Another Hand', cursive;
+        font-size: 50px;
+        padding: 30px;
+        line-height: 60px;
+    }
+
+    .one button,
+    .two button,
+    .first button,
+    .third button {
+        background-color: var(--black);
+        color: var(--white);
+        padding: 8px 20px;
+        font-size: 16px;
+        border: none;
+    }
+
+    .second {
+        width: 100%;
+        min-height: 650px;
+        display: grid;
+        grid-template-columns: auto;
+        place-items: center;
+        gap: 20px;
+        background-color: var(--silver);
+    }
+
+}
+
+
+@media only screen and (min-width:500px) and (max-width:1248px) {
+    .gallery-overall {
+        width: 100%;
+        min-height: 650px;
+        /* background-color: skyblue; */
+        display: grid;
+        place-items: center;
+        /* padding: 50px; */
+
+
+    }
+
+
+    .gallery {
+        width: 100%;
+        min-height: 500px;
+        background-color: var(--silver);
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+        padding: 50px;
+    }
+
+    .first h1,
+    .third h1 {
+        font-family: 'Just Another Hand', cursive;
+        font-size: 60px;
+        padding: 50px 35px;
+        line-height: 70px;
+    }
+
+    .one button,
+    .two button,
+    .first button,
+    .third button {
+        background-color: var(--black);
+        color: var(--white);
+        padding: 8px 20px;
+        font-size: 20px;
+        border: none;
+    }
+
+    .second {
+        width: 100%;
+        min-height: auto;
+        display: grid;
+        grid-template-columns: auto;
+        place-items: center;
+        gap: 30px;
+        background-color: var(--silver);
+    }
+
+}
+
+
+
+
+
 /*----------------------9 logo--------------------------*/
+.logo-overall {
+    width: 100%;
+    min-height: 200px;
+    /* background-color: skyblue; */
+    display: grid;
+    place-items: center;
+    /* padding:20px 0px; */
+
+}
+
 .logo {
-    width: 78%;
-    height: 200px;
+    width: 100%;
+    min-height: 200px;
     background-color: var(--silver);
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    padding: 20px;
+
 
 
 }
@@ -261,9 +500,15 @@
 
 
 /*----------------------Dog supplies--------------------------*/
+.dog-overall {
+    min-height: 500px;
+    display: grid;
+    place-items: center;
+}
+
 .dog {
     width: 78%;
-    height: 600px;
+    min-height: 600px;
     background-image: url(./images/homepage_bg_video_block_img.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -296,6 +541,94 @@
 
 .dog button:hover {
     background-color: var(--orange);
+}
+
+/* mobile view */
+@media only screen and (max-width:500px) {
+    .dog-overall {
+        min-height: 500px;
+        display: grid;
+        place-items: center;
+
+    }
+
+    .dog {
+        width: 100%;
+        min-height: 380px;
+        background-image: url(./images/homepage_bg_video_block_img.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+
+    .dog h1 {
+        color: var(--white);
+        font-family: 'Just Another Hand', cursive;
+        font-size: 50px;
+        padding: 30px 25px;
+        line-height: 45px;
+    }
+
+    .dog p {
+        color: var(--white);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 0px 25px 20px;
+        line-height: 28px;
+    }
+
+    .dog button {
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Tab view */
+@media only screen and (min-width:500px) and (max-width:1248px) {
+    .dog-overall {
+        min-height: 500px;
+        display: grid;
+        place-items: center;
+
+    }
+
+    .dog {
+        width: 100%;
+        min-height: 380px;
+        background-image: url(./images/homepage_bg_video_block_img.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+
+    .dog h1 {
+        color: var(--white);
+        font-family: 'Just Another Hand', cursive;
+        font-size: 80px;
+        padding: 60px 100px;
+        line-height: 80px;
+    }
+
+    .dog p {
+        color: var(--white);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 23px;
+        padding: 0px 35px 40px;
+        line-height: 40px;
+    }
+
+    .dog button {
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
 }
 
 /* --------------Featured products------------------ */
@@ -406,28 +739,41 @@
 
 
 /* --------------Free shipping on order over------------------ */
+.cat-overall {
+    width: 100%;
+    min-height: 500px;
+    display: grid;
+    place-items: center;
+  
+}
 
 .cat {
-    width: 100%;
-    height: 550px;
+    width: 80%;
+    min-height: 550px;
     background-color: var(--white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+
 }
 
 .leftside {
-    width: 45%;
-    height: 550px;
-    padding: 80px 70px 80px 185px;
+  
+    min-height: 150px;
+    /* border:1px solid black; */
+   
 
 }
 
 .leftside h1 {
-    font-size: 95px;
+    font-size: 90px;
     font-family: 'Just Another Hand', cursive;
     color: var(--black);
     line-height: 95px;
+    text-align: center;
+    /* padding:130px 20px; */
+    
+    
 }
 
 .leftside span {
@@ -435,50 +781,181 @@
 }
 
 .rightside {
-    width: 55%;
-    height: 550px;
+  
+    min-height: 200px;
+    display: grid;
+    place-items: center;
+    gap:20px;
+    /* border:1px solid rgb(183, 25, 25); */
+
+
 }
 
 .rightside img {
     width: 100%;
-    height: 100%;
+    height:100%;
     object-fit: cover;
-    padding: 0px 150px 0px 0px;
+    
+
 }
+
+/* mobile view */
+@media only screen and (max-width:500px) {
+
+    .cat-overall {
+        width: 100%;
+        min-height:auto;
+        background-color: skyblue;
+     
+
+    }
+
+    .cat {
+        width: 100%;
+        min-height:auto;
+        background-color: var(--white);
+        display: grid;
+        grid-template-columns: auto;
+        place-items: center;
+        gap:20px;
+        padding:20px;
+
+    }
+
+    .leftside {
+        width: 100%;
+        min-height: 150px;
+        padding: 20px;
+        text-align: center;
+        /* border:1px solid black; */
+
+    }
+
+    .leftside h1 {
+        font-size: 40px;
+        font-family: 'Just Another Hand', cursive;
+        color: var(--black);
+        line-height: 45px;
+    }
+
+    .rightside {
+        width: 100%;
+        min-height: 200px;
+        display: grid;
+        place-items: center;
+        /* border:1px solid rgb(146, 47, 47); */
+
+
+    }
+
+    .rightside img {
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+
+
+    }
+}
+
+
+/* Tab view */
+@media only screen and (min-width:500px) and (max-width:1200px){
+
+    .cat-overall {
+        width: 100%;
+        min-height: 450px;
+        background-color: skyblue;
+
+    }
+
+    .cat {
+        width: 100%;
+        min-height: 450px;
+        background-color: var(--white);
+        display: grid;
+        grid-template-columns: auto;
+        place-items: center;
+        gap:50px;
+        padding:50px;
+
+    }
+
+    .leftside {
+        width: 100%;
+        min-height: 150px;
+        padding: 20px;
+        text-align: center;
+        /* border:1px solid black; */
+
+    }
+
+    .leftside h1 {
+        font-size: 70px;
+        font-family: 'Just Another Hand', cursive;
+        color: var(--black);
+        line-height: 65px;
+        padding:20px 70px;
+    }
+
+    .rightside {
+        width: 100%;
+        min-height: 200px;
+        display: grid;
+        place-items: center;
+        /* border:1px solid rgb(146, 47, 47); */
+
+
+    }
+
+    .rightside img {
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+
+
+    }
+}
+
+
 
 /*--------------------Footer Area-------------------------*/
 .footeroverall {
     width: 100%;
-    height: 600px;
+    min-height: 600px;
     background-color: var(--silver);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .ftcontent {
     width: 78%;
-    height: 500px;
+    min-height: 500px;
     border: 3px solid var(--lightsilver);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    place-items: center;
     border-left: none;
     border-right: none;
     border-bottom: none;
 }
+
+
 
 /*-------information-------*/
 
 .info,
 .cata,
 .acc,
+.cont,
 .face {
-    width: 20%;
-    height: 500px;
+    width: 100%;
+    min-height: 500px;
+    /* border: 1px solid rgb(101, 32, 32); */
 
 }
+
+
 
 .info h3,
 .cata h3,
@@ -556,11 +1033,11 @@
 }
 
 /*-------Contacts-------*/
-.cont {
+/* .cont {
     width: 30%;
     height: 500px;
 
-}
+} */
 
 .cont h4 {
     font-size: 20px;
@@ -582,15 +1059,175 @@
     cursor: pointer;
 }
 
+
+/* mobile view */
+@media only screen and (max-width:500px) {
+    .footeroverall {
+        width: 100%;
+        min-height: 300px;
+        background-color: var(--silver);
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .ftcontent {
+        width: 100%;
+        border: 3px solid var(--lightsilver);
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto;
+        gap: 20px;
+        padding: 20px;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+
+    }
+
+    .info,
+    .cata,
+    .acc,
+    .cont,
+    .face {
+        width: 100%;
+        min-height: 150px;
+        /* border: 1px solid black; */
+
+
+    }
+}
+
+/* mobile x-large */
+@media only screen and (min-width:500px) and (max-width:715px) {
+    .footeroverall {
+        width: 100%;
+        min-height: 300px;
+        background-color: var(--silver);
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .ftcontent {
+        width: 100%;
+        border: 3px solid var(--lightsilver);
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto auto;
+        gap: 40px;
+        padding: 40px;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+
+    }
+
+    .info,
+    .cata,
+    .acc,
+    .cont,
+    .face {
+        width: 100%;
+        min-height: 500px;
+        /* border: 1px solid black; */
+
+
+    }
+}
+
+/* tab view */
+@media only screen and (min-width:715px) and (max-width:900px) {
+    .footeroverall {
+        width: 100%;
+        min-height: 300px;
+        background-color: var(--silver);
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .ftcontent {
+        width: 100%;
+        border: 3px solid var(--lightsilver);
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto auto auto;
+        gap: 40px;
+        padding: 40px;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+
+    }
+
+    .info,
+    .cata,
+    .acc,
+    .cont,
+    .face {
+        width: 100%;
+        min-height: 500px;
+        /* border: 1px solid black; */
+
+
+    }
+}
+
+/* laptop view */
+@media only screen and (min-width:900px) and (max-width:1250px) {
+    .footeroverall {
+        width: 100%;
+        min-height: 300px;
+        background-color: var(--silver);
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .ftcontent {
+        width: 100%;
+        border: 3px solid var(--lightsilver);
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto auto auto auto;
+        gap: 40px;
+        padding: 40px;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+
+    }
+
+    .info,
+    .cata,
+    .acc,
+    .cont,
+    .face {
+        width: 100%;
+        min-height: 500px;
+        /* border: 1px solid black; */
+
+
+    }
+}
+
+
+
+
+
 /*-------Footer last area-------*/
 .right {
     width: 100%;
-    height: 100px;
+    min-height: 100px;
     background-color: var(--silver);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 130px;
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -609,4 +1246,66 @@
 
 .fa-angle-up:hover {
     background-color: var(--black);
+}
+
+@media only screen and (max-width:500px) {
+    .right {
+        width: 100%;
+        min-height: 100px;
+        background-color: var(--silver);
+        display: grid;
+        grid-template-columns: auto;
+        padding: 20px;
+        place-items: center;
+        gap: 20px;
+        line-height: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .right h4 {
+        font-size: 14px;
+        color: var(--gray);
+        text-align: center;
+
+
+    }
+
+    .fa-angle-up {
+        background-color: var(--orange);
+        padding: 8px 10px;
+        color: var(--white);
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:965px) {
+    .right {
+        width: 100%;
+        min-height: 100px;
+        background-color: var(--silver);
+        display: grid;
+        grid-template-columns: auto;
+        padding: 40px;
+        place-items: center;
+        gap: 20px;
+        line-height: 28px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .right h4 {
+        font-size: 17px;
+        color: var(--gray);
+        text-align: center;
+
+
+    }
+
+    .fa-angle-up {
+        background-color: var(--orange);
+        padding: 8px 10px;
+        color: var(--white);
+        font-size: 22px;
+    }
 }
