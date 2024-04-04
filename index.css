@@ -20,7 +20,7 @@
     width: 100%;
     display: grid;
     place-items: center;
-    background-color: var(--silver);
+    /* background-color: var(--silver); */
 
 }
 
@@ -178,7 +178,7 @@
 .gallery {
     width: 78%;
     min-height: 650px;
-    background-color: var(--silver);
+    /* background-color: var(--silver); */
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 60px;
@@ -219,12 +219,7 @@
     grid-template-columns: auto;
     place-items: center;
     gap: 60px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    gap:70px; */
-    background-color: var(--silver);
+    
 }
 
 .one {
@@ -641,7 +636,7 @@
 .arrow {
     width: 100%;
     min-height: 100px;
-    background-color: var(--silver);
+    /* background-color: var(--silver); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -727,18 +722,26 @@
 
 
 /*---------------------Eight card product---------------------------*/
+
+.eight-overall {
+    width: 100%;
+    min-height: 550px;
+    display: grid;
+    place-items: center;
+    /* padding: 30px; */
+}
+
+
 .eightcard {
-    width: 78%;
-    background-color: var(--silver);
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px; */
+    width: 100%;
+    min-height: 550px;
+    /* background-color: var(--silver); */
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-items: center;
     align-items: center;
     gap: 30px;
+    padding: 30px;
 }
 
 .cardone,
@@ -750,16 +753,22 @@
 .cardseven,
 .cardeight {
     /* width: 23%; */
-    height: 550px;
+    min-height: 600px;
     /* border: 1px solid black; */
     font-family: arial;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
+
 }
 
 .imglogo {
     width: 100%;
-    height: 250px;
+    min-height: 250px;
     background-color: var(--white);
     object-fit: cover;
+    padding: 20px;
 }
 
 .imglogo p {
@@ -801,6 +810,161 @@
 .imglogo h4:hover {
     color: var(--black);
 }
+
+/* mobile view*/
+@media only screen and (max-width:600px) {
+    .eight-overall {
+        width: 100%;
+        min-height: 550px;
+        /* background-color: rgb(10, 78, 105); */
+        display: grid;
+        place-items: center;
+
+    }
+
+
+    .eightcard {
+        width: 100%;
+        min-height: 550px;
+        background-color: var(--silver);
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .imglogo {
+        width: 100%;
+        min-height: 250px;
+        padding: 20px;
+        background-color: var(--white);
+        object-fit: cover;
+    }
+
+    .cardone,
+    .cardtwo,
+    .cardthree,
+    .cardfour,
+    .cardfive,
+    .cardsix,
+    .cardseven,
+    .cardeight {
+        /* width: 23%; */
+        min-height: 525px;
+        /* border: 1px solid black; */
+        font-family: arial;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    }
+
+}
+
+/* Tab view*/
+@media only screen and (min-width:600px) and (max-width:1000px) {
+    .eight-overall {
+        width: 100%;
+        min-height: 550px;
+        background-color: rgb(10, 78, 105);
+        display: grid;
+        place-items: center;
+
+    }
+
+
+    .eightcard {
+        width: 100%;
+        min-height: 550px;
+        background-color: var(--silver);
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-items: center;
+        align-items: center;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .imglogo {
+        width: 100%;
+        min-height: 250px;
+        padding: 20px;
+        background-color: var(--white);
+        object-fit: cover;
+    }
+
+    .cardone,
+    .cardtwo,
+    .cardthree,
+    .cardfour,
+    .cardfive,
+    .cardsix,
+    .cardseven,
+    .cardeight {
+        /* width: 23%; */
+        min-height: 525px;
+        /* border: 1px solid black; */
+        font-family: arial;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    }
+
+}
+
+/* Laptop view*/
+@media only screen and (min-width:1000px) and (max-width:1250px) {
+    .eight-overall {
+        width: 100%;
+        min-height: 550px;
+        /* background-color: rgb(10, 78, 105); */
+        display: grid;
+        place-items: center;
+
+    }
+
+
+    .eightcard {
+        width: 100%;
+        min-height: 550px;
+        background-color: var(--silver);
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-items: center;
+        align-items: center;
+        gap: 35px;
+        padding: 35px;
+    }
+
+    .imglogo {
+        width: 100%;
+        min-height: 250px;
+        padding: 20px;
+        background-color: var(--white);
+        object-fit: cover;
+    }
+
+    .cardone,
+    .cardtwo,
+    .cardthree,
+    .cardfour,
+    .cardfive,
+    .cardsix,
+    .cardseven,
+    .cardeight {
+        /* width: 23%; */
+        min-height: 560px;
+        /* border: 1px solid black; */
+        font-family: arial;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    }
+
+}
+
+
 
 
 /* --------------Free shipping on order over------------------ */
