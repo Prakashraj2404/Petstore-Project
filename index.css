@@ -225,7 +225,7 @@
 .one {
 
     min-height: 350px;
-    background-color: gray;
+    /* background-color: gray; */
     background-image: url(./images/custom_showcase2_img.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -258,7 +258,7 @@
 .two {
 
     min-height: 350px;
-    background-color: #F07E0B;
+    /* background-color: #F07E0B; */
     background-image: url(./images/custom_showcase3_img.webp);
     background-repeat: no-repeat;
     background-size: cover;
