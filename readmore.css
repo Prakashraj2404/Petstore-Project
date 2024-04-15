@@ -220,6 +220,7 @@
 }
 .first_need input{
     margin: 5px 0 0;
+    padding: 10px;
     height: 35px;
     width: 344px;
     outline: none;
