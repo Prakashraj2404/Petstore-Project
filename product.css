@@ -160,6 +160,8 @@ html{
 .navigation-bar{
      background-color:var(--primary-color);
      padding:2rem 4rem;
+     position:sticky;
+     top:0;
 }
 .navigation-bar .main-nav-list{
     display: flex;
