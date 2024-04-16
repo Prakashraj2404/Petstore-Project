@@ -8,31 +8,34 @@
     <title>product</title>
 </head>
 <body>
+    <div class="topbar1-container">
+    <div class="topbar-1">
+        <div class="top-nav-left">
+            <div class="group-span">
+                <span>create an account</span>
+                <span>login</span>
+                <span class="checkout">checkout</span>
+            </div>
+            <div class="select-container">
+              <select name="payment-methods" id="payment-methods">
+                  <option value="USD">USD</option>
+                  <option value="EUR">EUR</option>
+                  <option value="GBP">GBP</option>
+              </select>
+            </div>
+        </div>
+        <div class="search-right">
+            <div class="search-holder">
+               <input type="search" placeholder="search store"/>
+               <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+        </div>
+    </div>
+</div><!--container for top bar1--> 
     <main class="main-container">
         <!-- tis is header part it contains top bar and navigation bar-->
         <header>
-            <div class="topbar-1">
-                <div class="top-nav-left">
-                    <div class="group-span">
-                        <span>create an account</span>
-                        <span>login</span>
-                        <span class="checkout">checkout</span>
-                    </div>
-                    <div class="select-container">
-                      <select name="payment-methods" id="payment-methods">
-                          <option value="USD">USD</option>
-                          <option value="EUR">EUR</option>
-                          <option value="GBP">GBP</option>
-                      </select>
-                    </div>
-                </div>
-                <div class="search-right">
-                    <div class="search-holder">
-                       <input type="search" placeholder="search store"/>
-                       <span><i class="fa-solid fa-magnifying-glass"></i></span>
-                    </div>
-                </div>
-            </div>
+            
             <!-- top bar 2 -->
             <div class="topbar-2">
                  <div class="right-content">
@@ -54,17 +57,42 @@
                 <label for="main-nav-check" class="main-nav-label"><i class="fa-solid fa-plus"></i> <i class="fa-solid fa-minus"></i></label>
                    <div class="nav-items">
                         <ul class="main-nav-list">
-                            <li><a href="#">Home</a></li>
+                            <li><a href="./index.html">Home</a></li>
                             <li class="product-main-menu" id="product-main-menu">
                                 <input type="checkbox" id="product"/>
-                                <label for="product" id="main-nav-product"><a href="#" class="active">Products</a> <i class="fa-solid fa-plus"></i> <i class="fa-solid fa-minus"></i></label>
-                                <div id="copiedContent">
-                                        
-                                </div><!--identity of copied conten-->
+                                <label for="product" id="main-nav-product"><a href="./product.html" class="active">Products</a> <i class="fa-solid fa-plus"></i> <i class="fa-solid fa-minus"></i></label>
+                                <!-- un order list for collection1 and collection 2 in smaller devices-->
+                                <div id="collections-smalldevice">
+                                   <ul class="collectionmenu-smmalldevice">
+                                      <li class="collectionmenu-smmalldevice-listitems">
+                                          <input type="checkbox" id="collection1smalldevice"/>
+                                          <label for="collection1smalldevice" class="collection1smalldevice-label">Collection 1 <i class="fa-solid fa-plus"></i> <i class="fa-solid fa-minus"></i></label>
+                                          <div class="smalldevicemenulist">
+                                            <span>Birds</span>
+                                            <span>Dogs</span>
+                                            <span>Fish</span>
+                                            <span>Small Animals</span>
+                                            <span>Spider</span>
+                                          </div>
+                                      </li>
+
+                                      <li class="collectionmenu-smmalldevice-listitems">
+                                         <input type="checkbox" id="collection2smalldevice"/>
+                                         <label for="collection2smalldevice" class="collection2smalldevice-label">Collection 2 <i class="fa-solid fa-plus"></i> <i class="fa-solid fa-minus"></i></label>
+                                         <div class="smalldevicemenulist">
+                                           <span>Birds</span>
+                                           <span>Dogs</span>
+                                           <span>Fish</span>
+                                           <span>Small Animals</span>
+                                           <span>Spider</span>
+                                         </div>
+                                      </li>
+                                  </ul>
+                                </div>
                             </li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Sale</a></li>
-                            <li><a href="#">About US</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./sale.html">Sale</a></li>
+                            <li><a href="./about.html">About US</a></li>
                             <li class="contactUS"><a href="#">Contact Us</a></li>
                             <div id="org-content-default">
                                <ul id="product-sub-menu">
@@ -110,6 +138,138 @@
                    </div>
             </nav>
         </header>
+        <section class="product-content">
+             <div class="sub-nav">
+              <span>HOME / </span> <span>COLLECTIONS</span>
+             </div>
+             <div class="products-list">
+                <!-- <p class="collection-title">Collections</p>  -->
+                <!-- all products -->
+                <!-- product 1 -->
+                <div class="equipments-container">
+                    <div class="equi-img-container">
+                       <img src="./images/product1.avif" alt="product1">
+                    </div>
+                    <p class="pet-equipment">Birds</p>
+                    <p class="product-count">8 Products</p>
+                    <p class="product-description">
+                        Our goods are totally safe for your pets’ health. They have passed ...
+                    </p>
+                    <p class="product-link"><a href="#">View Products</a></p>
+                </div>
+                <!-- product 2 -->
+                <div class="equipments-container">
+                    <div class="equi-img-container">
+                       <img src="./images/product2.avif" alt="product1">
+                    </div>
+                    <p class="pet-equipment">Cats</p>
+                    <p class="product-count">15 Products</p>
+                    <p class="product-description">
+                        We are all used to the fact that taking care of pets is our everyday...
+                    </p>
+                    <p class="product-link"><a href="#">View Products</a></p>
+                </div>
+                <!-- product 3 -->
+                <div class="equipments-container">
+                    <div class="equi-img-container">
+                       <img src="./images/product3.avif" alt="product1">
+                    </div>
+                    <p class="pet-equipment">Dogs</p>
+                    <p class="product-count">5 Products</p>
+                    <p class="product-description">
+                        Sometimes we can’t even realize how important they are. Also there ...
+                    </p>
+                    <p class="product-link"><a href="#">View Products</a></p>
+                </div>
+
+                <!-- product 4 -->
+                <div class="equipments-container">
+                    <div class="equi-img-container">
+                       <img src="./images/product4.avif" alt="product1">
+                    </div>
+                    <p class="pet-equipment">Fish</p>
+                    <p class="product-count">4 Products</p>
+                    <p class="product-description">
+                        There is no doubt about the quality of our goods. We have many devo...
+                    </p>
+                    <p class="product-link"><a href="#">View Products</a></p>
+                </div>
+
+                <!-- product 5 -->
+                <div class="equipments-container">
+                    <div class="equi-img-container">
+                       <img src="./images/product5.avif" alt="product5">
+                    </div>
+                    <p class="pet-equipment">Reptiles & Amphibians</p>
+                    <p class="product-count">6 Products</p>
+                    <p class="product-description">
+                        You can save your money at our pet store because we often provided...
+                    </p>
+                    <p class="product-link"><a href="#">View Products</a></p>
+                </div>
+
+                <!-- product 6 -->
+                <div class="equipments-container">
+                    <div class="equi-img-container">
+                       <img src="./images/product1.avif" alt="product6">
+                    </div>
+                    <p class="pet-equipment">Rodents (hamsters)</p>
+                    <p class="product-count">7 Products</p>
+                    <p class="product-description">
+                        Besides, you are welcome to evaluate a great choice of birthday cak...
+                    </p>
+                    <p class="product-link"><a href="#">View Products</a></p>
+                </div>
+
+                <!-- product 7 -->
+                <div class="equipments-container">
+                    <div class="equi-img-container">
+                       <img src="./images/product7.avif" alt="product7">
+                    </div>
+                    <p class="pet-equipment">Small Animals</p>
+                    <p class="product-count">7 Products</p>
+                    <p class="product-description">
+                        Little hearts of those animals we take care of are able to warm us ...                    </p>
+                    <p class="product-link"><a href="#">View Products</a></p>
+                </div>
+
+                <!-- product 8 -->
+                <div class="equipments-container">
+                    <div class="equi-img-container">
+                       <img src="./images/product8.avif" alt="product8">
+                    </div>
+                    <p class="pet-equipment">Spiders</p>
+                    <p class="product-count">5 Products</p>
+                    <p class="product-description">
+                        Also there is an opinion that we are often very similar to our pets...                    </p>
+                    <p class="product-link"><a href="#">View Products</a></p>
+                </div>
+
+                <!-- product 9 -->
+                <div class="equipments-container">
+                    <div class="equi-img-container">
+                       <img src="./images/product9.avif" alt="product9">
+                    </div>
+                    <p class="pet-equipment">veterinary</p>
+                    <p class="product-count">7 Products</p>
+                    <p class="product-description">
+                        We have many devoted clients all over the world and it proves all a...                    </p>
+                    <p class="product-link"><a href="#">View Products</a></p>
+                </div>
+
+                <!-- product 10 -->
+                <div class="equipments-container">
+                    <div class="equi-img-container">
+                       <img src="./images/product10.avif" alt="product10">
+                    </div>
+                    <p class="pet-equipment">Wild Animals</p>
+                    <p class="product-count">6 Products</p>
+                    <p class="product-description">
+                        And we know how to make your ideas real! Our Pets & Glamour Sto...                    </p>
+                    <p class="product-link"><a href="#">View Products</a></p>
+                </div>
+             </div>
+        </section>
     </main>
 </body>
 </html>
