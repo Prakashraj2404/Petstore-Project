@@ -4,12 +4,16 @@
     box-sizing: border-box;
     font: 18px Merriweather Sans,sans-serif;
     }
+
+    @import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+
             /* root variable creation */
 :root{
     --color: white;
     --full:#f07e0b;
     --bgbun:rgb(97, 97, 97);
     --shadow: 4px 4px 8px 0  rgba(0, 0, 0, 0.2);
+    --heding-font:'Just Another Hand', cursive;
 }
 .overall-container{
     background-color: rgb(233, 233, 233);
@@ -30,15 +34,9 @@
     display: grid;
     grid-template-columns: auto auto;
     gap: 20px;
-    /* display: flex;
-    flex-wrap: wrap; */
-    /* justify-content: center; */
-    /* align-items: center; */
-
 }
 .serach_blog{
     width: 400px;
-    /* border: 1px solid black; */
     
 }
 .serach_blog input{
@@ -107,7 +105,6 @@
 }
 .recent-tags{
     width: 100%;
-    /* min-height: 180px; */
     padding: 20px 0;
 }
 .recent-tags h1{
@@ -144,9 +141,6 @@
 .blog_content{
     width: 750px;
     padding: 0 20px ;
-    /* border: 1px solid black; */
-    /* min-height: 500px; */
-
 }
 .blog_first{
     padding-bottom: 20px;
@@ -180,9 +174,26 @@
 
 }
 .blod_content_write img{
-    height: 250px;
-    width: 220px;
+    height: 150px;
+    width: 150px;
     display: inline;
+}
+.blog-read{
+    font-family:var(--heding-font);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 3px 15px !important;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 3px;
+    /* letter-spacing: 2px; */
+}
+.blog-read:hover{
+    background-color: var(--full);
+    color: white;
+}
+.blog-hr{
+    margin-top: 20px;
 }
 .content_writer{
     width: 530px;
@@ -220,6 +231,7 @@
 }
 .first_need input{
     margin: 5px 0 0;
+    padding: 10px;
     height: 35px;
     width: 344px;
     outline: none;
@@ -314,9 +326,6 @@
     .input_need{
         flex-direction: column;
     }
-    /* .blog_second textarea{
-        width: 90%;
-    } */
 
 }
 @media screen and (min-width:900px) and (max-width:1200px){

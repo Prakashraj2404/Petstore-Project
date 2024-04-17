@@ -4,8 +4,9 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Blog </title>
-    <link rel="stylesheet" href="./readmore.css">
+    <link rel="stylesheet" href="./blog.css">
     <link rel="stylesheet" href="./index.css">
+    <!-- <link rel="stylesheet" href="./product.css"> -->
     <link rel="icon" href="./images/icons.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -15,10 +16,113 @@
 <body>
     <!-- overall container -->
     <div class="overall-container">
+        <main class="main-container">
+            <!-- tis is header part it contains top bar and navigation bar-->
+            <header>
+                <div class="topbar-1">
+                    <div class="top-nav-left">
+                        <div class="group-span">
+                            <span>create an account</span>
+                            <span>login</span>
+                            <span class="checkout">checkout</span>
+                        </div>
+                        <div class="select-container">
+                          <select name="payment-methods" id="payment-methods">
+                              <option value="USD">USD</option>
+                              <option value="EUR">EUR</option>
+                              <option value="GBP">GBP</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="search-right">
+                        <div class="search-holder">
+                           <input type="search" placeholder="search store"/>
+                           <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- top bar 2 -->
+                <div class="topbar-2">
+                     <div class="right-content">
+                        <h1>Pet Store</h1>
+                        <p>the best you can<br/>find on the web</p>
+                     </div>
+                     <div class="left-content">
+                         <p>
+                            call us:<br>
+                            <span class="fnum">+1800</span> 123 1234
+                        </p>
+                          <p class="cart-text"><i class="fa-solid fa-bag-shopping"></i><span>Shopping Cart(0)</span></p>
+                     </div>
+                </div>
+    
+                <nav class="navigation-bar">
+                    <h1 class="navigation-title">PETSTORE</h1>
+                    <input type="checkbox" id="main-nav-check" class="main-nav-check-btn"/>
+                    <label for="main-nav-check" class="main-nav-label"><i class="fa-solid fa-plus"></i> <i class="fa-solid fa-minus"></i></label>
+                       <div class="nav-items">
+                            <ul class="main-nav-list">
+                                <li><a href="./index.html">Home</a></li>
+                                <li class="product-main-menu" id="product-main-menu">
+                                    <input type="checkbox" id="product"/>
+                                    <label for="product" id="main-nav-product"><a href="#" class="active">Products</a> <i class="fa-solid fa-plus"></i> <i class="fa-solid fa-minus"></i></label>
+                                    <div id="copiedContent">
+                                            
+                                    </div><!--identity of copied conten-->
+                                </li>
+                                <li><a href="./blog.html">Blog</a></li>
+                                <li><a href="./sale.html">Sale</a></li>
+                                <li><a href="./about.html">About US</a></li>
+                                <li class="contactUS"><a href="#">Contact Us</a></li>
+                                <div id="org-content-default">
+                                   <ul id="product-sub-menu">
+                                    <li>
+                                        <input type="checkbox" id="collection1"/>
+                                        <label for="collection1" class="product-sub-menu-label">Collection 1 <i class="fa-solid fa-plus"></i> <i class="fa-solid fa-minus"></i></label>
+                                        <div>
+                                            <span>Birds</span>
+                                            <span>Dogs</span>
+                                            <span>Fish</span>
+                                            <span>Small Animals</span>
+                                            <span>Spider</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="collection2"/>
+                                        <label for="collection2" class="product-sub-menu-label">Collection 2 <i class="fa-solid fa-plus"></i> <i class="fa-solid fa-minus"></i></label>
+                                        <div>
+                                            <span>Reptiles & Amphibians</span>
+                                            <span> Rodents (hamsters)</span>
+                                            <span>Small animals</span>
+                                            <span> Spiders</span>
+                                            <span> Birds</span>
+                                        </div>
+                                    </li>
+                                    <li class="collection3">
+                                        
+                                        <label>Collection 3</label>
+                                        <div>
+                                            <span>Cat</span>
+                                            <span>Reptiles & Amphibians</span>
+                                        </div>
+                                    </li>
+                                    <li class="dogsclothes">
+                                        <div class="dog-clothes-section">
+                                           <h1>Dog's <br/>Clothes &amp<br/>acessories</h1>
+                                           <p>view now</p>
+                                        </div>
+                                    </li>
+                                   </ul>
+                                </div>
+                            </ul>        
+                       </div>
+                </nav>
+            </header>
+        </main>
         <!-- Content Strats  -->
         <div class="Content-start">
             <div class="page_info_content">
-                <h3> Home / Blog / Our store is offering a great assortment of different goods and servic</h3>
+                <h3> Home / Blog </h3>
             </div>
             <!-- Blog read more page content start -->
             <div class="blog_container">
@@ -77,20 +181,46 @@
                         <h3> David Braun </h3>
                         <h3> 0 Comments  </h3>
                         <div class="blod_content_write">
-                            <img src="./images/mm-blog-3_1024x1024.avif"  height="100px" width="100px" alt="pic">
+                            <img src="./images/mm-blog-3_1024x1024.avif" alt="pic">
                             <div class="content_writer">
                                 <p> <span> Our goods are totally safe for your pets’ health.</span>  They have passed many various tests without a single failure. One of the main advantages of our commodities is their reliability because we put great efforts in different researches that provide new safe technologies in our business.</p>
-                                <!-- <p> Our manufacturers and vendors guarantee its high quality. Remember that our tremendous 24/7 support system always ready to solve your problem and answer any question you have. Also there is an opinion that we are </p> -->
                             </div>
                         </div>
-                        <!-- <p>often very similar to our pets. To cut a long story short, pets are real miracle and no one would doubt about their influence and value. Our store is offering a great assortment of different goods and services for pets. We do care about them, and we know how to raise pets.</p>
-                        <p> We understand all significance of our activity and state that you and your pet will be satisfied. There is no doubt about the quality of our goods.</p> -->
                         <div class="recent-tags rec-tags">
                             <a href=""> <i class="fa-solid fa-tag"></i> animals</a>
-                                <a href=""> <i class="fa-solid fa-tag"></i> birds </a>
-                                <a href=""> <i class="fa-solid fa-tag"></i> cats</a>
+                            <a href=""> <i class="fa-solid fa-tag"></i> birds </a>
+                            <a href=""> <i class="fa-solid fa-tag"></i> cats</a>
                         </div>
-                        <button >  Previous Post </button>
+                        <a class="blog-read">read more</a>
+                        <hr class="blog-hr"/>
+                        
+                        <div class="blod_content_write">
+                            <img src="./images/mm-blog-1_1024x1024.avif" alt="pic">
+                            <div class="content_writer">
+                                <p> <span> Our goods are totally safe for your pets’ health.</span>  They have passed many various tests without a single failure. One of the main advantages of our commodities is their reliability because we put great efforts in different researches that provide new safe technologies in our business.</p>
+                            </div>
+                        </div>
+                        <div class="recent-tags rec-tags">
+                            <a href=""> <i class="fa-solid fa-tag"></i> animals</a>
+                            <a href=""> <i class="fa-solid fa-tag"></i> birds </a>
+                            <a href=""> <i class="fa-solid fa-tag"></i> cats</a>
+                        </div>
+                        <a class="blog-read">read more</a>
+
+                        <hr class="blog-hr"/>
+                        
+                        <div class="blod_content_write">
+                            <img src="./images/mm-blog-2_a6a002d0-dba7-46ee-9138-c608b840886a_1024x1024.avif" alt="pic">
+                            <div class="content_writer">
+                                <p> <span> Our goods are totally safe for your pets’ health.</span>  They have passed many various tests without a single failure. One of the main advantages of our commodities is their reliability because we put great efforts in different researches that provide new safe technologies in our business.</p>
+                            </div>
+                        </div>
+                        <div class="recent-tags rec-tags">
+                            <a href=""> <i class="fa-solid fa-tag"></i> animals</a>
+                            <a href=""> <i class="fa-solid fa-tag"></i> birds </a>
+                            <a href=""> <i class="fa-solid fa-tag"></i> cats</a>
+                        </div>
+                        <a class="blog-read">read more</a>
                     </div>
                     <div class="blog_second">
                         <h1> Leave a comment </h1>
@@ -139,7 +269,7 @@
                         <h4>Contact us</h4>
                     </a>
                 </div>
-
+    
                 <!--Catalog-->
                 <div class="cata">
                     <h3>Catalog:</h3>
@@ -174,7 +304,7 @@
                         <h4>Fish</h4>
                     </a>
                 </div>
-
+    
                 <!--My account-->
                 <div class="acc">
                     <h3>My account:</h3>
@@ -187,31 +317,31 @@
                     <a href="#">
                         <h4>My cart</h4>
                     </a>
-
+    
                 </div>
-
+    
                 <!--Contacts-->
                 <div class="cont">
                     <h3>My account:</h3>
                     <h4>My company,<br> 4578 Marmora Road,<br> Glasgow D04 89GR <br> Email:info@demolink.org</h4>
                     <h5>call us now:</h5>
                     <h1>0123-456-789</h1>
-
+    
                 </div>
-
+    
                 <!--Facebook-->
                 <div class="face">
                     <h3>Facebook:</h3>
                 </div>
             </div>
         </div>
-
+    
         <!--Footer last area-->
         <div class="right">
             <h4>&#169 2024 Pet Store. All rights reserved. POWERED BY SHOPIFY. Created by selva samprash A</h4>
             <a href="#"><i class="fa-solid fa-angle-up"></i></a>
         </div>
-
+    
 
 
 
