@@ -186,6 +186,8 @@
     border: 1px solid black;
     cursor: pointer;
     border-radius: 3px;
+    text-decoration: none;
+    color: black;
     /* letter-spacing: 2px; */
 }
 .blog-read:hover{
