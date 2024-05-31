@@ -64,30 +64,52 @@
 
             <nav class="navigation-bar">
                 <h1 class="navigation-title">PETSTORE</h1>
-                <input type="checkbox" id="main-nav-check" class="main-nav-check-btn" />
-                <label for="main-nav-check" class="main-nav-label"><i class="fa-solid fa-plus"></i> <i
-                        class="fa-solid fa-minus"></i></label>
-                <div class="nav-items">
-                    <ul class="main-nav-list">
-                        <li><a href="./index.html">Home</a></li>
-                        <li class="product-main-menu" id="product-main-menu">
-                            <input type="checkbox" id="product" />
-                            <label for="product" id="main-nav-product"><a href="#" class="active">Products</a> <i
-                                    class="fa-solid fa-plus"></i> <i class="fa-solid fa-minus"></i></label>
-                            <div id="copiedContent">
+                <input type="checkbox" id="main-nav-check" class="main-nav-check-btn"/>
+                <label for="main-nav-check" class="main-nav-label"><i class="fa-solid fa-plus"></i> <i class="fa-solid fa-minus"></i></label>
+                   <div class="nav-items">
+                        <ul class="main-nav-list">
+                            <li><a href="./index.html" class="active">Home</a></li>
+                            <li class="product-main-menu" id="product-main-menu">
+                                <input type="checkbox" id="product"/>
+                                <label for="product" id="main-nav-product"><a href="./product.html">Products</a> <i class="fa-solid fa-plus"></i> <i class="fa-solid fa-minus"></i></label>
+                                <!-- un order list for collection1 and collection 2 in smaller devices-->
+                                <div id="collections-smalldevice">
+                                   <ul class="collectionmenu-smmalldevice">
+                                      <li class="collectionmenu-smmalldevice-listitems">
+                                          <input type="checkbox" id="collection1smalldevice"/>
+                                          <label for="collection1smalldevice" class="collection1smalldevice-label">Collection 1 <i class="fa-solid fa-plus"></i> <i class="fa-solid fa-minus"></i></label>
+                                          <div class="smalldevicemenulist">
+                                            <span>Birds</span>
+                                            <span>Dogs</span>
+                                            <span>Fish</span>
+                                            <span>Small Animals</span>
+                                            <span>Spider</span>
+                                          </div>
+                                      </li>
 
-                            </div><!--identity of copied conten-->
-                        </li>
-                        <li><a href="./blog.html">Blog</a></li>
-                        <li><a href="./sale.html">Sale</a></li>
-                        <li><a href="./about.html">About US</a></li>
-                        <li class="contactUS"><a href="#">Contact Us</a></li>
-                        <div id="org-content-default">
-                            <ul id="product-sub-menu">
+                                      <li class="collectionmenu-smmalldevice-listitems">
+                                         <input type="checkbox" id="collection2smalldevice"/>
+                                         <label for="collection2smalldevice" class="collection2smalldevice-label">Collection 2 <i class="fa-solid fa-plus"></i> <i class="fa-solid fa-minus"></i></label>
+                                         <div class="smalldevicemenulist">
+                                           <span>Birds</span>
+                                           <span>Dogs</span>
+                                           <span>Fish</span>
+                                           <span>Small Animals</span>
+                                           <span>Spider</span>
+                                         </div>
+                                      </li>
+                                  </ul>
+                                </div>
+                            </li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./sale.html">Sale</a></li>
+                            <li><a href="./about.html">About US</a></li>
+                            <li class="contactUS"><a href="#">Contact Us</a></li>
+                            <div id="org-content-default">
+                               <ul id="product-sub-menu">
                                 <li>
-                                    <input type="checkbox" id="collection1" />
-                                    <label for="collection1" class="product-sub-menu-label">Collection 1 <i
-                                            class="fa-solid fa-plus"></i> <i class="fa-solid fa-minus"></i></label>
+                                    <input type="checkbox" id="collection1"/>
+                                    <label for="collection1" class="product-sub-menu-label">Collection 1 <i class="fa-solid fa-plus"></i> <i class="fa-solid fa-minus"></i></label>
                                     <div>
                                         <span>Birds</span>
                                         <span>Dogs</span>
@@ -97,9 +119,8 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="collection2" />
-                                    <label for="collection2" class="product-sub-menu-label">Collection 2 <i
-                                            class="fa-solid fa-plus"></i> <i class="fa-solid fa-minus"></i></label>
+                                    <input type="checkbox" id="collection2"/>
+                                    <label for="collection2" class="product-sub-menu-label">Collection 2 <i class="fa-solid fa-plus"></i> <i class="fa-solid fa-minus"></i></label>
                                     <div>
                                         <span>Reptiles & Amphibians</span>
                                         <span> Rodents (hamsters)</span>
@@ -109,7 +130,7 @@
                                     </div>
                                 </li>
                                 <li class="collection3">
-
+                                    
                                     <label>Collection 3</label>
                                     <div>
                                         <span>Cat</span>
@@ -118,14 +139,14 @@
                                 </li>
                                 <li class="dogsclothes">
                                     <div class="dog-clothes-section">
-                                        <h1>Dog's <br />Clothes &amp<br />acessories</h1>
-                                        <p>view now</p>
+                                       <h1>Dog's <br/>Clothes &amp<br/>acessories</h1>
+                                       <p>view now</p>
                                     </div>
                                 </li>
-                            </ul>
-                        </div>
-                    </ul>
-                </div>
+                               </ul>
+                            </div>
+                        </ul>        
+                   </div>
             </nav>
         </header>
     </main>
